@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="default" location="292,165" size="280,525">
+    <action name="*_*" location="65,71" size="150,83">
+      <result name="input">
+        <resourceEdge source="input" routing="0" target="index.jsp" />
+      </result>
+      <result name="adminIndex">
+        <resourceEdge source="adminIndex" routing="0" target="adminIndex.jsp" />
+      </result>
+      <result name="userIndex">
+        <resourceEdge source="userIndex" routing="0" target="userIndex.jsp" />
+      </result>
+    </action>
+    <action name="file" location="65,267" size="150,41">
+      <result name="message">
+        <resourceEdge source="message" routing="0" target="message.jsp" />
+      </result>
+    </action>
+    <action name="excel" location="65,442" size="150,41">
+      <result name="exceldownload">
+        <resourceEdge source="exceldownload" routing="0" target="excelDownLoad.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="index.jsp" path="/index.jsp" location="627,220" size="150,55" />
+  <webResource name="adminIndex.jsp" path="/WEB-INF/jsp/admin/adminIndex.jsp" location="313,10" size="150,55" />
+  <webResource name="userIndex.jsp" path="/WEB-INF/jsp/user/userIndex.jsp" location="9,220" size="150,55" />
+  <webResource name="message.jsp" path="/WEB-INF/jsp/inc/message.jsp" location="611,395" size="150,55" />
+  <webResource name="excelDownLoad.jsp" path="/WEB-INF/jsp/inc/excelDownLoad.jsp" location="627,570" size="150,55" />
+  <include file="user.xml" location="20,780" size="150,30" />
+  <include file="kyxm.xml" location="265,780" size="150,30" />
+  <include file="xslw.xml" location="510,780" size="150,30" />
+  <include file="xszz.xml" location="755,780" size="150,30" />
+  <include file="zscq.xml" location="20,885" size="150,30" />
+</Struts2Diagram>
+

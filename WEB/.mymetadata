@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="HISSC"
+  id="myeclipse.1401590667373"
+  context-root="/HISSC"
+  j2ee-spec="5.0"
+  archive="HISSC.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

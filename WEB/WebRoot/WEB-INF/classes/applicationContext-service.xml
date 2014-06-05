@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/tx
+       http://www.springframework.org/schema/tx/spring-tx.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop.xsd">
+       	<!-- 配置声明式事务的步骤 -->
+	<!-- 1、配置一个事务管理器 -->
+	<bean id="txManager"
+		class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<!-- 2、配置事务的相关属性，事务通知 -->
+	<tx:advice id="txAdvise" transaction-manager="txManager">
+		<tx:attributes>
+			<!-- get 开始的方法，不需要进行事务处理 -->
+			<tx:method name="get*" read-only="true" />
+			<tx:method name="*" propagation="REQUIRED" />
+		</tx:attributes>
+	</tx:advice>
+	<!-- 3、通过 aop 配置，那些类中的那些方法需要进行事务管理 -->
+	<aop:config>
+		<aop:pointcut expression="execution(* cn.hsd.hissc.service..*.*(..))"
+			id="serviceMethods" />
+		<aop:advisor advice-ref="txAdvise" pointcut-ref="serviceMethods" />
+	</aop:config>
+	<bean id="userService" class="cn.hsd.hissc.service.impl.UserServiceImpl">
+		<property name="userDao" ref="userDao" />
+	</bean>
+	
+
+</beans>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<!-- 将 struts 中的 action 对象，交给 spring 来创建 -->
+	<constant name="struts.objectFactory" value="spring" />
+	<!-- 不超过980M-->
+	<constant name="struts.multipart.maxSize" value="1000000000" />
+	<package name="default" namespace="/" extends="struts-default">
+		<action name="*_*" class="{1}Action" method="{2}">
+			<result name="input">/index.jsp</result>
+			<result name="adminIndex">/WEB-INF/jsp/admin/adminIndex.jsp</result>
+			<result name="userIndex">/WEB-INF/jsp/user/userIndex.jsp</result>
+		</action>
+		<action name="file" class="fileAction">
+			<result name="message">/WEB-INF/jsp/inc/message.jsp</result>
+		</action>
+		<action name="excel" class="excelAction">
+			<result name="exceldownload">/WEB-INF/jsp/inc/excelDownLoad.jsp</result>
+		</action>
+	</package>
+	<include file="user.xml"/>
+</struts>

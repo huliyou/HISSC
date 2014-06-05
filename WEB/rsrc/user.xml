@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="user" namespace="/" extends="struts-default">
+		<action name="user" class="userAction">
+			<result name="adduserforword">/WEB-INF/jsp/admin/sub/addUser.jsp</result>
+			<result name="getuserbyconditionforward">/WEB-INF/jsp/admin/sub/getUserByCondition.jsp</result>
+			<result name="message">/WEB-INF/jsp/inc/message.jsp</result>
+			<result name="success">/WEB-INF/jsp/admin/sub/showUsers.jsp</result>
+			<result name="listuserbyname">/WEB-INF/jsp/admin/sub/showUsersByName.jsp</result>
+			<result name="listuserbyde">/WEB-INF/jsp/admin/sub/showUsersByDe.jsp</result>
+			<result name="updateUser">/index.jsp</result>
+<!--			<result name="listUser" type="redirectAction">user!listUser</result>-->
+		</action>
+		<action name="testlogin" class="loginAction">
+		   <result name="success">/jsp/success.jsp</result>
+		   <result name="input">/index.jsp</result>
+		</action>
+		<action name="testRegister" class="registerAction">		   
+		   <result name="registerSuccess">/index.jsp</result>
+		</action>
+	</package>	
+	
+</struts>
