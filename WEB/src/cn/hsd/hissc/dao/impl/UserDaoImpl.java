@@ -1,40 +1,44 @@
-package cn.hsd.hissc.dao.impl;
+package com.dao.impl;
 
-import cn.hsd.hissc.dao.UserDao;
-import cn.hsd.hissc.model.Pager;
-import cn.hsd.hissc.model.User;
+import com.bean.User;
+import com.dao.UserDao;
 
-public class UserDaoImpl extends BaseDaoImpl<User> implements UserDao {
-	
-	public User getUserByUserId(String userid,String password) {
-		String hql = "from User u where u.userid=?";
-		if (password != null ){
-			hql = hql + " AND password='" + password+"'";
-		}
-		return (User) super.getSession()
-				.createQuery(hql)
-				.setParameter(0, userid).uniqueResult();
-	}
-	public User getUserByName(String username) {
-		String hql = "from User u where u.name=?";
-		return (User) super.getSession()
-				.createQuery(hql)
-				.setParameter(0, username).uniqueResult();
+public class UserDaoImpl implements UserDao{
+
+	@Override
+	public User getUserById(String id) {
+		// TODO 自动生成的方法存根
+		return null;
 	}
 
-	public Pager<User> getUserPager() {
-		return super.findPager("from User u WHERE u.adminFlag<>'Y'");
+	@Override
+	public User getUserByUserName(String UserName) {
+		// TODO 自动生成的方法存根
+		return null;
 	}
-	
-	public User getUserByUserId(String userid) {
-		String hgl = "from User u where u.userid=?";
-		return (User)super.getSession().createQuery(hgl).setParameter(0, userid).uniqueResult();
+
+	@Override
+	public User getUserByUserName(String UserName, String password) {
+		// TODO 自动生成的方法存根
+		return null;
 	}
-	public Pager<User> getUserPagerByName(String name) {
-		return super.findPager("from User u WHERE u.adminFlag<>'Y' and u.name='"+name+"'");
+
+	@Override
+	public String addUser(User user) {
+		// TODO 自动生成的方法存根
+		return null;
 	}
-	public Pager<User> getUserPagerByDe(String department) {
-		return super.findPager("from User u WHERE u.adminFlag<>'Y' and u.department='"+department+"'");
+
+	@Override
+	public String deleteUser(User user) {
+		// TODO 自动生成的方法存根
+		return null;
+	}
+
+	@Override
+	public String updataUser(User user) {
+		// TODO 自动生成的方法存根
+		return null;
 	}
 
 }

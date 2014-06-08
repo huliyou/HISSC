@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>登录页面</title>
+<style>
+.divcss1{width:250; height:113}
+.divcss2{width:500; height:360}
+
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+.1class{background:#999999;}
+</style>
+
+<link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
+<link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<script language="JavaScript" type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+<script language="JavaScript" type="text/javascript" src="bootstrap/js/jquery-2.1.1.min.js"></script>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<div style="height:300px ; width:600px ; margin:auto" class="row" >
+  <div style="float:left; width:250; height:113 ">
+    <div><img src="images/0.png" width="250" height="114" /></div>
+  </div>
+  <div style="float:right">
+    <form id="form1" name="form1" method="post" action="userlogin"  class="form-horizontal " >
+      <div class="accordion-group">
+        <p>
+          <input type="text"  name="user.username" value="用户名" title="用户名" onclick="this.value='';" onblur="if(this.value==''){this.value=this.defaultValue;}" class="span4"/>
+        </p>
+        <p>
+          <input type="text" name="user.password" value="密码" title="密码" onclick="this.value='';this.type='password'" onblur="if(this.value==''){this.value=this.defaultValue;this.type='text';}else{this.type='password';}"class="span4" />
+        </p>
+        <p>
+          <input type="submit" class="btn btn-danger" value="登录"/>
+          <input type="checkbox" name="checkbox" value="checkbox" />       
+                       下次自动登录</p>
+        <strong><a href="？？">忘记密码？</a> </strong>
+        <p><strong>没有账号？</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="regist.html"><strong>立即注册</strong></a></p>
+      </div>
+    </form>
+  </div>
+</div>
+<div  class="1class" style="width:700px ;background:#CCCCCC; margin:auto ">
+<center>
+  <pre>
+<strong><a href="？？">科学技术部</a></strong>    <strong>|</strong>   <a  href="???"><strong>黑龙江科学技术厅</strong></a>     <strong>|</strong>     <a href="？？？"><strong>黑龙江典型产业集包群科技服务平台</strong></a>
+
+黑龙江省科技特派员工作网@版权所有    联系电话：0451-51920656
+</pre></center>
+</div>
+
+</body>
+</html>

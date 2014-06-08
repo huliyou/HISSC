@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.data.TePaiYuan" table="tepaiyaun">
+	<id name="userName" type="string" column="username">
+		<generator class="assigned"></generator>
+	</id>
+	<property name="address" column="address" type="string"></property>
+	<property name="chengShi" column="chengshi" type="string"></property>
+	<property name="email" column="email" type="string"></property>
+	<property name="jianJie" column="jianjie" type="string"></property>
+	<property name="lingYu1" column="lingyu1" type="string"></property>
+	<property name="lingYu2" column="lingyu2" type="string"></property>
+	<property name="lingYu3" column="lingyu3" type="string"></property>
+	<property name="lingYu4" column="lingyu4" type="string"></property>
+	<property name="name" column="name" type="string"></property>
+	<property name="p" column="p" type="integer"></property>
+	<property name="phone" column="phone" type="string"></property>
+	<property name="shengFen" column="shengfen" type="string"></property>
+	<property name="tel" column="tel" type="string"></property>
+	<property name="zhiCheng" column="zhicheng" type="string"></property>
+	<property name="zhiWei" column="zhiwei" type="string"></property>
+    </class>
+	
+</hibernate-mapping>

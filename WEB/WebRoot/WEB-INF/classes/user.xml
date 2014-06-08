@@ -15,11 +15,11 @@
 			<result name="updateUser">/index.jsp</result>
 <!--			<result name="listUser" type="redirectAction">user!listUser</result>-->
 		</action>
-		<action name="testlogin" class="loginAction">
-		   <result name="success">/jsp/success.jsp</result>
+		<action name="userlogin" class="loginAction">
+		   <result name="success">/jsp/loginsuccess.jsp</result>
 		   <result name="input">/index.jsp</result>
 		</action>
-		<action name="testRegister" class="registerAction">		   
+		<action name="userRegister" class="registerAction">		   
 		   <result name="registerSuccess">/index.jsp</result>
 		</action>
 	</package>	

@@ -1,0 +1,123 @@
+﻿$axure.loadCurrentPage({
+  "url":"登陆页面.html",
+  "generationDate":new Date(1400740445843.75),
+  "isCanvasEnabled":false,
+  "variables":["OnLoadVariable"],
+  "page":{
+    "packageId":"90c667f7c0e54f1e897f5bf89333fafe",
+    "type":"Axure:Page",
+    "name":"登陆页面",
+    "notes":{
+},
+    "style":{
+      "baseStyle":"627587b6038d43cca051c114ac41ad32",
+      "pageAlignment":"near",
+      "fill":{
+        "fillType":"solid",
+        "color":0xFFFFFFFF},
+      "image":null,
+      "imageHorizontalAlignment":"near",
+      "imageVerticalAlignment":"near",
+      "imageRepeat":"auto",
+      "favicon":null,
+      "sketchFactor":"0",
+      "colorStyle":"appliedColor",
+      "fontName":"Applied Font",
+      "borderWidth":"0"},
+    "adaptiveStyles":{
+},
+    "interactionMap":{
+},
+    "diagram":{
+      "objects":[{
+          "id":"7020abf5066649eeab987b79dd78e8b7",
+          "label":"",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":320,
+              "y":15},
+            "size":{
+              "width":687,
+              "height":316}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"dc192a3f07154a81808a3f0f0ddda2d4",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "location":{
+                  "x":320,
+                  "y":15},
+                "size":{
+                  "width":687,
+                  "height":316}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/登陆页面/u0.png"}},
+{
+          "id":"d23895ccfcfb413690affafdc852795f",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":710,
+              "y":224},
+            "size":{
+              "width":70,
+              "height":16}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"9485f52f8ad14d4199b6c9080b1d3981",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "location":{
+                  "x":710,
+                  "y":224},
+                "size":{
+                  "width":70,
+                  "height":16}},
+              "adaptiveStyles":{
+}}],
+          "interactionMap":{
+            "onClick":{
+              "description":"OnClick",
+              "cases":[{
+                  "description":"Case 1",
+                  "isNewIfGroup":false,
+                  "actions":[{
+                      "action":"linkWindow",
+                      "description":"Open 注册页面 in Current Window",
+                      "target":{
+                        "targetType":"page",
+                        "url":"注册页面.html",
+                        "includeVariables":true},
+                      "linkType":"current"}]}]}},
+          "tabbable":true,
+          "images":{
+            "normal~":"resources/images/transparent.gif"}}]}},
+  "masters":{
+},
+  "objectPaths":{
+    "7020abf5066649eeab987b79dd78e8b7":{
+      "scriptId":"u0"},
+    "dc192a3f07154a81808a3f0f0ddda2d4":{
+      "scriptId":"u1"},
+    "d23895ccfcfb413690affafdc852795f":{
+      "scriptId":"u2"},
+    "9485f52f8ad14d4199b6c9080b1d3981":{
+      "scriptId":"u3"}}});

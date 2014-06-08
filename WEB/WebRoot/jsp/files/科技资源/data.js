@@ -1,0 +1,123 @@
+﻿$axure.loadCurrentPage({
+  "url":"科技资源.html",
+  "generationDate":new Date(1400740445875),
+  "isCanvasEnabled":false,
+  "variables":["OnLoadVariable"],
+  "page":{
+    "packageId":"16188ab9bb7a493eb380dc2d775f0c4e",
+    "type":"Axure:Page",
+    "name":"科技资源",
+    "notes":{
+},
+    "style":{
+      "baseStyle":"627587b6038d43cca051c114ac41ad32",
+      "pageAlignment":"near",
+      "fill":{
+        "fillType":"solid",
+        "color":0xFFFFFFFF},
+      "image":null,
+      "imageHorizontalAlignment":"near",
+      "imageVerticalAlignment":"near",
+      "imageRepeat":"auto",
+      "favicon":null,
+      "sketchFactor":"0",
+      "colorStyle":"appliedColor",
+      "fontName":"Applied Font",
+      "borderWidth":"0"},
+    "adaptiveStyles":{
+},
+    "interactionMap":{
+},
+    "diagram":{
+      "objects":[{
+          "id":"d51c006894ab4da5aa074eb7ab833413",
+          "label":"",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":0,
+              "y":-47},
+            "size":{
+              "width":897,
+              "height":807}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"1c8c8db668e54e5fbc9162a35b3f914e",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "location":{
+                  "x":0,
+                  "y":-47},
+                "size":{
+                  "width":897,
+                  "height":807}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/科技资源/u0.png"}},
+{
+          "id":"878307d12b644e2496151d5cd6f5460a",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":660,
+              "y":24},
+            "size":{
+              "width":100,
+              "height":26}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"fa86dea2c2294c328beaf290398483a6",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "location":{
+                  "x":660,
+                  "y":24},
+                "size":{
+                  "width":100,
+                  "height":26}},
+              "adaptiveStyles":{
+}}],
+          "interactionMap":{
+            "onClick":{
+              "description":"OnClick",
+              "cases":[{
+                  "description":"Case 1",
+                  "isNewIfGroup":false,
+                  "actions":[{
+                      "action":"linkWindow",
+                      "description":"Open 科特派服务角 in Current Window",
+                      "target":{
+                        "targetType":"page",
+                        "url":"科特派服务角.html",
+                        "includeVariables":true},
+                      "linkType":"current"}]}]}},
+          "tabbable":true,
+          "images":{
+            "normal~":"resources/images/transparent.gif"}}]}},
+  "masters":{
+},
+  "objectPaths":{
+    "d51c006894ab4da5aa074eb7ab833413":{
+      "scriptId":"u0"},
+    "1c8c8db668e54e5fbc9162a35b3f914e":{
+      "scriptId":"u1"},
+    "878307d12b644e2496151d5cd6f5460a":{
+      "scriptId":"u2"},
+    "fa86dea2c2294c328beaf290398483a6":{
+      "scriptId":"u3"}}});

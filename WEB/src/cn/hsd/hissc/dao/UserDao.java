@@ -1,45 +1,50 @@
-package cn.hsd.hissc.dao;
+package com.dao;
+import com.bean.User;;
 
-import cn.hsd.hissc.model.Pager;
-import cn.hsd.hissc.model.User;
-
-public interface UserDao extends BaseDao<User>{
+/**
+ * @author 张世超
+ *
+ */
+public interface UserDao{
 	/**
-	 * 根据登陆号和密码查询用户对象
-	 * @param userid	用户名
-	 * @param password	密码
+	 * 根据id获取user对象
+	 * @param id 用户名
 	 * @return	用户对象，如果用户不存在，则返回 null
 	 */
-	public User getUserByUserId(String userid,String password);
-	/**
-	 * 根据用户登录号 获取用户对象
-	 * @param userid 登录号
-	 * @return 用户对象
-	 */
-	public User getUserByUserId(String userid);
-	/**
-	 * 根据用户名查询用户对象
-	 * @param username	用户名
-	 * @param password	密码
-	 * @return	用户对象，如果用户不存在，则返回 null
-	 */
-	public User getUserByName(String username);
+	public User getUserById(String id);
 	
 	/**
-	 * 分页获取用户对象
-	 * @return
+	 * 根据登录名获取user对象
+	 * @param UserName 登录名
+	 * @return user对象
 	 */
-	public Pager<User> getUserPager();
+	public User getUserByUserName(String UserName);
+	
 	/**
-	 * 根据用户名查询用户 并分页显示
-	 * @param name
-	 * @return
+	 * 根据登录名和密码获取user对象
+	 * @param UserName 登录名
+	 * @param password 密码
+	 * @return user对象
 	 */
-	public Pager<User> getUserPagerByName(String name);
+	public User getUserByUserName(String UserName,String password);
+	
 	/**
-	 * 根据用户行政单位查询用户并分页显示
-	 * @param department
-	 * @return
+	 * 添加user实例
+	 * @param user user对象
+	 * @return 字符串，返回success表示成功 返回fail表示失败
 	 */
-	public Pager<User> getUserPagerByDe(String department);
+	public String addUser(User user);
+	
+	/**
+	 * @param user user对象
+	 * @return 字符串，返回success表示成功 返回fail表示失败
+	 */
+	public String deleteUser(User user);
+	
+	/**
+	 * @param user user对象
+	 * @return 字符串，返回success表示成功 返回fail表示失败
+	 */
+	public String updataUser(User user);
+	
 }

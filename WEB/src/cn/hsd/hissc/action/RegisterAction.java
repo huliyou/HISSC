@@ -9,12 +9,7 @@ import com.opensymphony.xwork2.ActionSupport;
 public class RegisterAction extends ActionSupport{
     User user = new User();
     private UserService userService;
-	
-    @Override
-    public String execute() throws Exception {
-    	userService.addUser(user);
-    	return "registerSuccess";
-    }
+
     public User getUser() {
 		return user;
 	}
@@ -30,4 +25,9 @@ public class RegisterAction extends ActionSupport{
 	public void setUserService(UserService userService) {
 		this.userService = userService;
 	}
+	@Override
+    public String execute() throws Exception {
+    	userService.addUser(user);//ÃÌº””√ªß
+    	return "registerSuccess";
+    }
 }

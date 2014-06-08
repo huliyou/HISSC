@@ -3,6 +3,7 @@
 	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
 	"http://struts.apache.org/dtds/struts-2.3.dtd">
 <struts>
+    <constant name="struts.devMode" value="true" />
 	<!-- 将 struts 中的 action 对象，交给 spring 来创建 -->
 	<constant name="struts.objectFactory" value="spring" />
 	<!-- 不超过980M-->

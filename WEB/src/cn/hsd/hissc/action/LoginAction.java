@@ -9,17 +9,17 @@ import com.opensymphony.xwork2.ActionSupport;
 
 public class LoginAction extends ActionSupport{
 	private Map<String,Object> session;
-	private String message;
+	private String message2;
 	User user;
 	private UserService userService;
     @Override
     public String execute() throws Exception {
-    	user = userService.getUserByUserId(user.getUserid(), user.getPassword());
+    	user = userService.getUserByUserId(user.getUsername(), user.getPassword());
     	if(user!=null){
     		return SUCCESS;
     	}else{
-    		message = "ÕËºÅ»òÃÜÂë´íÎó£¡";
-    		session.put("message", "message");
+    		message2 = "ÕËºÅ»òÃÜÂë´íÎó£¡";    		
+    		session.put("message1", message2);
     		return INPUT;
     	}   	
     }

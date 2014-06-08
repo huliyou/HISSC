@@ -33,6 +33,8 @@
 		<property name="annotatedClasses">
 			<list>
 				<value>cn.hsd.hissc.model.User</value>
+				<value>cn.hsd.hissc.model.Expert</value>
+				<value>cn.hsd.hissc.model.Enterprise</value>
 			</list>
 		</property>
 	</bean>

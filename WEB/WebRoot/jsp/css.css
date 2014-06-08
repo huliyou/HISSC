@@ -1,0 +1,91 @@
+/* CSS Document */
+
+body{ font:12px "Times New Roman", Times, serif; margin:0px; text-align:center; background:#FFF;}
+
+#container{ width:100%}
+
+#Header{ width:1450px;margin:0 auto;height:250px;}
+#Header1{ width:1450px; height:120px;}
+#Header1 div{float:left}
+#Header1_1{width:1200px;height:120px; background:url(images/u1.png)}
+#fuwujiao{width:100px; height:30px; margin:30px 725px auto;}
+#fuwujiao a{ text-decoration:none;}
+#yhm{width:50px; height:50px; margin:15px 890px auto;}
+#hyzx{ width:80px; height:20px; margin:-28px 910px auto;}
+#hyzx a{ text-decoration:none}
+#tcdl{ width:80px; height:20px; margin:-28px 980px auto;}
+#tcdl a{ text-decoration:none}
+#menu{width:320px; height:20px; margin:-100px 800px auto;}
+#menu ul{ list-style:none; margin:0px;}
+#menu ul li{ float:left; margin:0 10px;}
+#menu ul li a{ text-decoration:none; color:#999999}
+.menuDiv{ width:1px; height:15px; background:#999}
+#Header1_2{width:250px; height:120px; background:url(images/u2.png);}
+#Header2{width:985px; height:112px;position:absolute; left:50%; top:50%; margin:-207px 0 0 -270px;}
+#Header2 div{ float:left}
+#Header2_1{ width:120px; height:112px;  background:url(images/u4.png);}
+#Header2_2{ width:815px; height:70px; text-align:left; margin:20px 0px 0px 50px;}
+#ss{width:500px; height:35px; margin:-30px 370px auto}
+
+#PageBody{ width:984px; height:738px; margin:0px 0 0 234px;}
+#PageBody div{float:left}
+#Sidebar{ width:219px; height:740px;}
+#Sidebar div{}
+#Sidebar1{ width:219px; height:353px; background:url(images/u5.png)}
+#Sidebar2{ width:219px; height:382px; background:url(images/u7.png)}
+#Sidebar2_1{width:219px; height:70px; background:url(images/u11.png); margin:38px 0px auto;}
+#Sidebar2_2{width:219px; height:70px; background:url(images/u12.png)}
+#Sidebar2_3{width:219px; height:70px; background:url(images/u13.png)}
+#Sidebar2_4{width:219px; height:70px; background:url(images/u14.png)}
+#Sidebar2_5{width:219px; height:70px; background:url(images/u15.png)}
+#MainBody{ width:765px; height:740px;}
+#MainBody div{}
+#MainBody1{ width:765px; height:353px; background:url(images/u6.png)}
+#MainBody2{ width:765px; height:385px;}
+#MainBody2_1{ width:765px; height:190px; background:url(images/u10.png);}
+#MainBody2_2{ width:765px; height:190px; background:url(images/u10.png);}
+
+#Footer{width:1450px; height:106px; background:url(images/u3.png)}
+#kjzczxptrk{ width:300px; height:50px; margin:-10px 0px 0px 550px;}
+#footermenu{ width:600px; height:50px; margin:auto 470px;}
+#footermenu ul{ list-style:none; margin:0px;}
+#footermenu ul li{ float:left; margin:0 5px;}
+#footermenu ul li a{ text-decoration:none; color:#666666;}
+.menuDiv{ width:1px; height:15px; background:#666666;}
+#bq{ width:500px; height:50px; margin:-20px 0px 0px 460px;}
+
+
+
+
+<!--
+*{font-size:12px;}
+html,body{margin:0px;text-align:center;over-flow:hidden;height:100%;width:100%;}
+UL{list-style-type:none; margin:0px;}
+/* 标准盒模型 */
+.ttl{height:18px;}
+.ctt{height:auto;padding:20px;clear:both;border:0px solid #064ca1;border-top:0;text-align:left;}
+.w936{margin:10px 0px auto;clear:both;width:1000px;/*滑动门的宽度*/}
+/* TAB 切换效果 */
+.tb_{ background:url(images/u9.png);background-repeat: repeat-x;background-color: #E6F2FF;}
+.tb_ ul{height:24px;}
+.tb_ li{float:left;height: 24px;line-height:1.9;width: 120px;cursor:pointer;}
+/* 控制显示与隐藏css类 */
+.normaltab   { background:url(images/u8.png); background-repeat: no-repeat; color:#1F3A87 ;}
+.hovertab    { background-repeat: no-repeat; color:#1F3A87; font-weight:bold }
+.dis{display:block;}
+.undis{display:none;}
+
+//-------------------------------------------------------------------------------------------
+
+.search_form{position:relative; height:31px; margin:0 auto;display:inline-block;} 
+
+.search_form:hover{-webkit-box-shadow:0 0 3px #999;-moz-box-shadow:0 0 3px #999} 
+
+.sinput{float:left; width:500px; height:21px; line-height:21px; padding:4px 7px; color:b3b3b3;  border:1px solid #999; border-radius:2px 0 0 2px; background-color:#fbfbfb;} 
+
+.sbtn{float:left; width:100px; height:31px; padding:0 12px; margin-left:-1px;  border-radius:0 2px 2px 0; border:1px solid #4d90fe; background-color:#4d90fe; cursor:pointer;  display:inline-block; font-size:12px; vertical-align:middle; color:#f3f7fc;position:absolute;} 
+
+.sbtn:hover{background:#4084f2}
+//---------------------------------------------------------------------------------------------------------
+
+
